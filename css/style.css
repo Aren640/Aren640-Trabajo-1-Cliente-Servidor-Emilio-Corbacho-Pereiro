@@ -1,0 +1,156 @@
+@font-face {
+    font-family: "Friz Quadrata";
+    src: url("../fuentes/FrizQuadrata-Bold.otf");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #101b2b;
+    color: #f5f0e6;
+}
+
+.portada,
+.fondo {
+    background-image: url("../img/fondoWarhammer.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.portada {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f5f0e6;
+    text-decoration: none;
+}
+
+h1,
+h2,
+.boton,
+.portada p {
+    font-family: "Friz Quadrata", Georgia, serif;
+}
+
+h1,
+h2 {
+    color: #d4af61;
+}
+
+.portada h1 {
+    position: absolute;
+    top: 3rem;
+    font-size: 4rem;
+}
+
+.portada p {
+    font-size: 2rem;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.boton {
+    display: inline-block;
+    width: 18rem;
+    padding: 1rem;
+    border: thin solid #d4af61;
+    border-radius: 0;
+    background-color: #183b6b;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.pagina-juego {
+    width: 56rem;
+    margin: 0 auto;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.pagina-juego h1 {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+.panel,
+.marcador {
+    padding: 2rem;
+    border: thin solid #d4af61;
+    background-color: #101b2b;
+}
+
+.panel h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.panel p {
+    margin-bottom: 1rem;
+}
+
+#formulario-nombre label,
+#formulario-nombre input {
+    display: block;
+    margin: 1rem auto;
+}
+
+#nombre {
+    width: 18rem;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.marcador {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tablero {
+    display: grid;
+    grid-template-columns: repeat(6, 8rem);
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.volver {
+    margin-top: 2rem;
+}
+
+.carta {
+    width: 8rem;
+    height: 11rem;
+    border: thin solid #d4af61;
+    border-radius: 0;
+    background-color: #183b6b;
+    background-image: url("../img/parteAtras.png");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 1rem;
+    border: thin solid #d4af61;
+}
